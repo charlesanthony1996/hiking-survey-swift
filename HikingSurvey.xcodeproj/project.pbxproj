@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		561337AC308EA70200AFF754 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 561337AB308EA70200AFF754 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		56133796308E9E4A00AFF754 /* HikingSurvey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HikingSurvey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		561337AB308EA70200AFF754 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,7 @@
 		5613378D308E9E4A00AFF754 = {
 			isa = PBXGroup;
 			children = (
+				561337AB308EA70200AFF754 /* .gitignore */,
 				56133798308E9E4A00AFF754 /* HikingSurvey */,
 				56133797308E9E4A00AFF754 /* Products */,
 			);
@@ -109,6 +115,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				561337AC308EA70200AFF754 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
