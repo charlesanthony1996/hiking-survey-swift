@@ -18,7 +18,9 @@ struct ContentView: View {
                 .font(.title)
                 .padding(.top, 24)
             ScrollView {
-                ForEach(responses) { response in Text(response.text)}
+                ForEach(responses) { response in
+                    Text(response.text)
+                }
             }
         }
         .onAppear{
@@ -26,7 +28,8 @@ struct ContentView: View {
                 responses.insert(Response(text: response), at: 0)
             }
         }
-        .padding()
+        .padding(.horizontal)
+        .background(Color(white: 0.94))
     }
 }
 
