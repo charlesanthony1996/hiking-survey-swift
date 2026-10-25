@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var response: [Response] = []
+    @State var responses: [Response] = []
     
     var body: some View {
         VStack {
@@ -17,9 +17,14 @@ struct ContentView: View {
                 .frame(maxWidth: .infinity)
                 .font(.title)
                 .padding(.top, 24)
+            ScrollView {
+                ForEach(responses) { response in Text(response.text)}
+            }
         }
         .onAppear{
-            
+            for response in Response.sampleResponse {
+                responses.insert(Response(text: response), at: 0)
+            }
         }
         .padding()
     }
